@@ -1,14 +1,14 @@
 # Pacorulo wiki-space (UNDER CONSTRUCTION)
 Personal space/repo where I will try to share different docs about the technologies I'm interested in and about different how to's that will help me in the present and future.
 
-1. [C* Related](#Cassandra)
-    1. [Apache C*](#OpenSource)
+1. [C\* Related](#Cassandra)
+    1. [Apache C\*](#OpenSource)
     2. [Astra](#Astra)
     3. [Drivers](#Drivers)
        1. [Java](#Java)
 2. [ScyllaDB](#ScyllaDB)
 3. [AI](#AI)
-    1. [C* 5.0](#C5)
+    1. [C\* 5.0](#C5)
     2. [Qdrant](#Qdrant)
 4. [Linux](#Linux)
     1. [Linux HowTo's ](#Liwiki)
