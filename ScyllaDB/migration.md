@@ -23,7 +23,7 @@ From S301 ScyllaDB shares this logic tree about when to use a migration strategy
 ## Migrating from C\* to ScyllaDB
 - C* and ScyllaDB are API compatible
 - Complex data-types are challenging
-	- as heavy use of collections or non-frozen udt's can led to performance issues
-        - LWT's when using dual writes can fail on source but success on target DB or viceversa (which is the worst scenario), so avoid dual write on tables with LWT
+    - as heavy use of collections or non-frozen udt's can led to performance issues
+    - LWT's when using dual writes can fail on source but success on target DB or viceversa (which is the worst scenario), so avoid dual write on tables with LWT
 - Writetimes can be manipulated by `USING TIMESTAMP` feature
 - Use the client side timestamp and alter schema for caching, compaction and compression
