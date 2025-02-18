@@ -4,8 +4,9 @@ There are three indexing options available in ScyllaDB: `Materialized Views` (MV
 - MV are a global index. When a new MV is declared, a new table is created and is distributed to the different nodes using the standard table distribution mechanisms
 - Global Secondary Indexes (also called Secondary Indexes), are indexes created on columns that are not part of the partition key or not entirely part of it, allowing efficient searches on non-partition keys 
 	```
-	ScyllaDB takes a different approach than Apache Cassandra and implements Secondary Indexes using global indexing. With global indexing, a Materialized View is created for each index. The Materialized View has the indexed column as the partition key and primary key (partition key and clustering keys) of the indexed row as clustering keys. ScyllaDB breaks indexed queries into two parts: (1) a query on the index table to retrieve partition keys for the indexed table and (2) a query to the indexed table using the retrieved partition keys. Read more in [this blog post](https://www.scylladb.com/2017/11/03/secondary/).
+	ScyllaDB takes a different approach than Apache Cassandra and implements Secondary Indexes using global indexing. With global indexing, a Materialized View is created for each index. The Materialized View has the indexed column as the partition key and primary key (partition key and clustering keys) of the indexed row as clustering keys. ScyllaDB breaks indexed queries into two parts: (1) a query on the index table to retrieve partition keys for the indexed table and (2) a query to the indexed table using the retrieved partition keys.
 	```
+	> Read more in [this blog post](https://www.scylladb.com/2017/11/03/secondary/)
 - Local Secondary Indexes, the partition key of the base table and the index are the same key, the corresponding rows in the index are guaranteed to end up on the same node. This results in very efficient queries if you filter by the indexed column(s)
 
 Apache C* has Primary indexing and Secondary indexing (2i) on all C* versions while on C* 5.0 Storage-attached indexing (SAI) was introduced (below a brief explanation of each one):
