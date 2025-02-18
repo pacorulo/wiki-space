@@ -1,13 +1,11 @@
 # Basic Data Modeling
 
 Main steps:
-    - Domain, the conceptual data model that involves to identify the key entities and their relationships
-    - Application, identify the application workflow and main queries as the data model is built around the queries and therefore it is done early
-    - Database schema, the logical data model by defining keyspaces, tables and columns
-    - Physical data model, done using CQL
-    - Review and optimize, once it is tested by loading data, tesing the queries and think about how it will scale so the data model will be able to handle future workkloads
-
-> WARN: ALLOW FILTERING is blocked by default
+- Domain, the conceptual data model that involves to identify the key entities and their relationships
+- Application, identify the application workflow and main queries as the data model is built around the queries and therefore it is done early
+- Database schema, the logical data model by defining keyspaces, tables and columns
+- Physical data model, done using CQL
+- Review and optimize, once it is tested by loading data, tesing the queries and think about how it will scale so the data model will be able to handle future workkloads
 
 3 Important points to be taken into account when desingning the data model from the perspective of the App Workflow and Query Analysis:
 
