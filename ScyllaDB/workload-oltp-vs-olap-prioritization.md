@@ -46,8 +46,6 @@ One more important point about `Schedulers` is when two workloads go through the
 
 The priority of the operations will be defined by classifying the operations to different workloads using the user/role used to set up the connection (and executing the workload).
 
-> [Link to Workload Prioritization documentation](https://enterprise.docs.scylladb.com/branch-2022.2/using-scylla#workload-prioritization)
-
 
 ### Multiple Isolated Workloads
 
@@ -56,7 +54,8 @@ To solve this no isolation issue is where ScyllaDB introduces the `Shares` conce
 - CPU
 - Internal Concurrency
 - IO
-- Memoruy
+- Memory
+  
 Also, CPU and IO isolation does not hurt on utilization, meaning if for example only one workload is executed at a precise time, then this workload will use 100% CPU, but resources will be shared depending on the `Shares` assigned if there are more than one workload at a point of time.
 At the time of the documentation in the Scy University (4 years ago, i.e., 2021) the memory partition was Static as usually there is plenty memory to serve the workloads and the memory management wasn't key.
 Therefore, if we want to isolate one workload in particular, we just have to provide a high number of `Shares` compared to the rest of Shares applied to the rest of workloads (imagine a ratio of 1000:1, then the workload with 1000 Shares will get most of the resources if it happens in parallel with the workload that had assigned 1 Share). It also shows that the `Shares` does not have meaninig by themselves but when they are compared/relative to other Service Level Shares
