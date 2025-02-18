@@ -3,7 +3,7 @@
 ## Managing users
 - Identity, who is interfacing with the database?
 - Authentication, verify the truth of a user that has identified in Scylla
-- Users and passwords, managed from cql with cqlsh against system\_auth ks), with passwd feeded through cryptographic hasing function `cript\_r` from GNU C library (bcrypt when available by the OS and SHA-512)
+- Users and passwords, managed from cql with cqlsh against system\_auth ks), with passwd feeded through cryptographic hasing function `cript_r` from GNU C library (bcrypt when available by the OS and SHA-512)
 - Users metadata is replicated (RF) through the ring/nodes
 - Identity in Enterprises supported through [LDAP](https://enterprise.docs.scylladb.com/stable/operating-scylla/security/ldap-authentication.html)
 
