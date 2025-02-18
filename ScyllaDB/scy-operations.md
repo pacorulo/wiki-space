@@ -30,6 +30,6 @@ The recommendation is not to use it in prod. Use it by customizing different par
 > [YCSB](https://www.scylladb.com/glossary/ycsb/) is another benchmark tool used by Scy
 
 ## Tracing
-[Tracing](https://opensource.docs.scylladb.com/stable/using-scylla/tracing)is disabled by default, but once enabled it must be on for a very small window as it will impact your performance if the workload is "good enough" (like most of the production workloads). Stored in the system_traces keyspace. It randomly chooses a request to be traced with some defined probability. 
+[Tracing](https://opensource.docs.scylladb.com/stable/using-scylla/tracing) is disabled by default, but once enabled it must be on for a very small window as it will impact your performance if the workload is "good enough" (like most of the production workloads). Stored in the system_traces keyspace. It randomly chooses a request to be traced with some defined probability. 
 > Also take a look at [Slow Query Logging](https://opensource.docs.scylladb.com/stable/using-scylla/tracing#slow-query-logging), where a similar slow query logging, see [Collecting Slow Queries](https://docs.datastax.com/en/dse/6.9/managing/management-services/performance/collect-slow-queries.html) doc, also exists on DSE while Apache C* has a new feature coming from v4.0 named [Full Query Logging](https://cassandra.apache.org/doc/stable/cassandra/operating/fqllogging.html) that is not the same feature that exists in either ScyllaDB or DSE, but can help to track queries.
 
