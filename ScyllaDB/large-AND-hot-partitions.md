@@ -14,8 +14,7 @@ They can be found under the tables:
 > IMPORTANT NOTE: these tables do not exist on Apache C*
 
 ScyDB offers this useful [Large Partitions Hunting](https://opensource.docs.scylladb.com/stable/troubleshooting/debugging-large-partition.html) blog.
-    > `Datastax` offers this [Identifying large partitions and their keys](https://support.datastax.com/s/article/Identifying-large-partitions-and-their-keys) doc (take into consideration this doc says that it applies DSE and Apache C* 2.1 or later)
-    > Under Apache C* documentation there is some useful info, like [Output only partitions over 100MiB in size](https://cassandra.apache.org/doc/5.0/cassandra/managing/tools/sstable/sstablepartitions.html#output-only-partitions-over-100mib-in-size)
+> `Datastax` offers this [Identifying large partitions and their keys](https://support.datastax.com/s/article/Identifying-large-partitions-and-their-keys) doc (take into consideration this doc says that it applies DSE and Apache C* 2.1 or later) or Under Apache C* documentation there is some useful info, like [Output only partitions over 100MiB in size](https://cassandra.apache.org/doc/5.0/cassandra/managing/tools/sstable/sstablepartitions.html#output-only-partitions-over-100mib-in-size)
 
 ## Hot Partitions
 
