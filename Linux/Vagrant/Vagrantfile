@@ -1,0 +1,40 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+#Required plugins
+required_plugins = %w( vagrant-hosts )
+required_plugins.each do |plugin|
+  system "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
+end
+#Domain for the machines
+#domain = 'domain.com'
+#Machines and HW values to generate
+#Vagrant Boxes Catalog: https://portal.cloud.hashicorp.com/vagrant/discover
+nodes = [
+  { :hostname => 'vm_name', :ram => 8096, :ip => '192.168.1.3', :box => 'centos/7' },
+]
+#Current vagrantfile directory to store secondary disk
+vagrant_root = File.dirname(__FILE__)
+Vagrant.configure("2") do |config|
+  nodes.each do |node|
+    config.vm.define node[:hostname] do |nodeconfig|
+      nodeconfig.vm.box = node[:box]
+      #nodeconfig.vm.hostname = node[:hostname] + domain
+      nodeconfig.vm.network :private_network, ip: node[:ip]
+      nodeconfig.vm.provision :hosts, :sync_hosts => true
+      memory = node[:ram] ? node[:ram] : 256;
+      #nodeconfig.ssh.username="vagrant"  
+      #nodeconfig.ssh.password="vagrant"      
+      #nodeconfig.ssh.insert_key=false
+      nodeconfig.vm.synced_folder "/path_to_local_shared_folder", "/path_to_remote_shared_folder"
+      nodeconfig.vm.provider :virtualbox do |vb|
+        #vb.memory = "8096"
+        #vb.cpus = "2"
+        vb.customize [
+          "modifyvm", :id,
+          "--cpuexecutioncap", "50",
+          "--memory", memory.to_s,
+        ]
+      end
+    end
+  end
+end
