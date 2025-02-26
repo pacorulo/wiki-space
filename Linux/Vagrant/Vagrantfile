@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
       #nodeconfig.ssh.password="vagrant"      
       #nodeconfig.ssh.insert_key=false
       nodeconfig.vm.synced_folder "/path_to_local_shared_folder", "/path_to_remote_shared_folder"
-      nodeconfig.vm.boot_timeout = 60
+      nodeconfig.vm.boot_timeout = 90
       nodeconfig.vm.provider :virtualbox do |vb|
         #vb.memory = "8096"
         #vb.cpus = "2"
