@@ -1,3 +1,5 @@
+# Service degraded 
+
 **casper-md5check** service is a degraded and "relic" "service on Linux Mint (which is designed to verify the integrity of a Live ISO system, so not needed on an already installed system), so we can disable it as on start up it happens the system shows its status degraded due to it.
 
 Check the system status:
