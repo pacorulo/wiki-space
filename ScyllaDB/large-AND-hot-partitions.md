@@ -1,4 +1,6 @@
-# Large partitions
+# Large partitions && Hot Partitions
+
+## Large partitions
 
 `ScyllaDB vs C*` large partition warning threshold, `compaction_large_partition_warning_threshold_mb` parameter:
 - default value in C*: 100 (MB)

@@ -1,4 +1,4 @@
-# ScyllaDB Operations
+# Scylla Operations
 
 ## Journalctl Commands
 Filter:
