@@ -1,4 +1,4 @@
-# Tablets in ScyllaDB
+# Tablets
 
 Tablets are implemented in ScyllaDB 6.0 and does not have any similar on C\* or DSE.
 

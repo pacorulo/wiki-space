@@ -1,4 +1,4 @@
-## ScyllaDB Operator (K8s Operator)
+## Scylla Operator (K8s Operator)
 
 Some of the features the Operator currently supports are:
 
