@@ -1,4 +1,4 @@
-# Indexing in ScyllaDB
+# Indexing
 
 There are three indexing options available in ScyllaDB: `Materialized Views` (MV), `Global Secondary Indexes` and `Local Secondary Indexes`. In ScyllaDB, unlike Apache Cassandra, both Global and Local Secondary Indexes are implemented using Materialized Views under the hood.
 - MV are a global index. When a new MV is declared, a new table is created and is distributed to the different nodes using the standard table distribution mechanisms
