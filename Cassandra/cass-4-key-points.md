@@ -18,7 +18,6 @@ At this point in time we have C\* 4.0 and 4.1 where it is needed to take into ac
 
 > Datastax also provides two useful links (but consider they can be modified in the future as Datastax changes its documentation from time to time without taking care of old links in some cases) that contain some more detailed points from the new features and improvements (I added them to the previous list): [Introduction to Apache Cassandra 4.0](https://www.datastax.com/learn/whats-new-for-cassandra-4/introduction) and [What’s New in Cassandra 4.0?](https://www.datastax.com/learn/whats-new-for-cassandra-4)
 
-
 ## [New Features in Apache Cassandra 4.1](https://cassandra.apache.org/doc/stable/cassandra/new/index.html)
 
 - Paxos v2
