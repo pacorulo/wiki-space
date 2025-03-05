@@ -8,4 +8,5 @@ It is an [open source vector search engine](https://github.com/qdrant/qdrant) de
 - [Code Snippets](common-code-snippets.md)
 - [Issues && Questions](common-issues-questions.md)
 - [Python script](peer-shard-info.py) (this is a case of using a script created by myself and improved with the help of a chatbot)
+    - [Create collection script](create-collection.py)
     - [Log output](log-output.md)
