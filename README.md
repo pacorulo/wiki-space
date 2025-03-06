@@ -10,10 +10,10 @@ Personal space/repo where I will try to share different docs about the technolog
 3. [AI](#ai)
     1. [C\* 5.0](#c5)
     2. [Qdrant](#qdrant)
+    3. [RPA](#rpa)
 4. [Linux](#linux)
     1. [Linux HowTo's ](#liwiki)
     2. [Vagrant](#vagrant)
-5. [RPA](#rpa)
    
 
 ## C* Related <a name="cassandra"></a>
@@ -33,6 +33,8 @@ Discovering ScyllaDB and the differences and improvements respect to Apache C* a
 Cassandra 5.0 introduces vector search, which leverages storage-attached indexing and dense indexing techniques to transform data exploration and analysis. This update is especially impactful for domains like machine learning and artificial intelligence (AI).
 ### Qdrant <a name="qdrant"></a>
 [Section](https://github.com/pacorulo/wiki-space/tree/main/AI/Qdrant) for Qdrant, which is an [open source vector search engine](https://github.com/qdrant/qdrant) designed to handle large-scale AI applications, especially those that involve embeddings. It is primarily used to perform similarity searches, enabling efficient search and retrieval of data like images, text, or other unstructured data based on vector representations.
+### RPA <a name="rpa"></a>
+Robotic Process Automation Space.
 
 ## Linux <a name="linux"></a>
 ### Linux HowTo's <a name="liwiki"></a>
@@ -40,5 +42,3 @@ Commands, issues and helpful info related to Linux/Unix distributions for my own
 ### Vagrant <a name="vagrant"></a>
 Vagrant file and docs about issues.
 
-## RPA <a name="rpa"></a>
-Robotic Process Automation Space.
