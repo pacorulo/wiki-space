@@ -37,6 +37,8 @@ Cassandra 5.0 introduces vector search, which leverages storage-attached indexin
 ## Linux <a name="linux"></a>
 ### Linux HowTo's <a name="liwiki"></a>
 Commands, issues and helpful info related to Linux/Unix distributions for my own purposes.
+### Shell Scripts
+Some shell scripts that are useful for different purposes.
 ### Vagrant <a name="vagrant"></a>
 Vagrant file and docs about issues.
 
