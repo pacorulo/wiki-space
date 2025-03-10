@@ -12,7 +12,8 @@ Personal space/repo where I will try to share different docs about the technolog
     2. [Qdrant](#qdrant)
 4. [Linux](#linux)
     1. [Linux HowTo's ](#liwiki)
-    2. [Vagrant](#vagrant)
+    2. [Shell Scripts](#ss)
+    3. [Vagrant](#vagrant)
 5. [RPA](#rpa)
    
 
@@ -37,7 +38,7 @@ Cassandra 5.0 introduces vector search, which leverages storage-attached indexin
 ## Linux <a name="linux"></a>
 ### Linux HowTo's <a name="liwiki"></a>
 Commands, issues and helpful info related to Linux/Unix distributions for my own purposes.
-### Shell Scripts
+### Shell Scripts <a name="ss"></a>
 Some shell scripts that are useful for different purposes.
 ### Vagrant <a name="vagrant"></a>
 Vagrant file and docs about issues.
