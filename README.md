@@ -15,7 +15,7 @@ Personal space/repo where I will try to share different docs about the technolog
     2. [Shell Scripts](#ss)
     3. [Vagrant](#vagrant)
 5. [RPA](#rpa)
-   
+
 
 ## C* Related <a name="cassandra"></a>
 ### Apache C* <a name="opensource"></a>
