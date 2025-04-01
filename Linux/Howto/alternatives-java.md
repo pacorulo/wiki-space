@@ -1,11 +1,25 @@
-# Managing Java versions with alternatives
+# Managing Java versions with _alternatives_
 
-As Oracle java was previously installed we only need to use `alternatives` to point to our java installation: 
+As Oracle java was previously installed we only need to use `alternatives` to point to our java installation:
 ```
-sudo alternatives --install /usr/bin/java java /opt/java8/bin/java 200000
+sudo update-alternatives --config java
+```
+that will output something like:
+```
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      auto mode
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      manual mode
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      manual mode
 ```
 
-After that, we can check it is correctly configured using the command:
+
+We can change the `Priority` with the command:
 ```
-sudo alternatives --config java
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-21-openjdk-amd64/bin/java 1000
 ```
+(in case we would like to put jdk-21 with higher priority)
+
+> NOTE: it is interesting using `alternatives` with only the option `--all`
