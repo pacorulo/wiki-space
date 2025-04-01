@@ -12,4 +12,6 @@
 - [Managing Java versions with alternatives](alternatives-java.md)
 - [Modify/Edit $HOME directories](home-dirs.md)
 - [Recovering USB drives](recovering-usb-drives.md)
+- [Regex](regex.md)
 - [Service degraded](casper-m5dcheck-mint.md)
+- [Using docker without sudo](docker-without-sudo.md)
