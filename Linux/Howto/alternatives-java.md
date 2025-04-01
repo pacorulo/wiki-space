@@ -23,4 +23,4 @@ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-21-openj
 
 > NOTE 1: it is interesting using `alternatives` with only the option `--all`
 
-> NOTE 2: I like to simplify it by using an alias: `alias alternatives='sudo uptdate-alternatives --config java'`
+> NOTE 2: I like to simplify it by using an alias: `alias alternatives='sudo update-alternatives --config java'`
