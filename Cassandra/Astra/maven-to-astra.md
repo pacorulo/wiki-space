@@ -85,7 +85,7 @@ I would prefer sometimes to connect through the terminal instead of an IDE like 
 
 6. Create java folder structure
     ```
-    mkdir -p src/java/main
+    mkdir -p src/main/java
     ```
 
 7. Create the java `Jdriver.java` file under previous folder
