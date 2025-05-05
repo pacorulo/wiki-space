@@ -51,20 +51,28 @@ Some groups of different regular expressions that exist and can be used and are 
           print(f"Bad email format on line: {my_line}")
       else:
           print(f"Good email format for: {my_line}")
-          
+      
   
-  def main():    
-      email_file = open("/home/pakete/vagrant/dellbridge/email_list.txt", "r")
-  
-      #re_pattern = "^[a-zA-Z0-9].*?@[a-zA-Z0-9-]*\.[com|org]"
-      #mail_pattern = re.compile(re_pattern)
+  def main():
+      email_file = open("/path_to/email_list.txt", "r")
+
       mail_pattern = re.compile('^[a-zA-Z0-9._-]*?@[a-zA-Z0-9.-]*?\.[com|org]')
-  
+      
       for line in email_file:
-              checking_email(mail_pattern,line)
+          checking_email(mail_pattern,line)
       
       email_file.close()
-      
+  
   if __name__ == "__main__":
       main()
+  ```
+
+- Get the last string from a phrase/line
+  ```
+  grep -o '[^,]*$' file_name
+  
+  -o (--only-matching) only outputs the part of the input that matches the pattern (the default is to print the entire line if it contains a match).
+  [^,] is a character class that matches any character other than a comma.
+  * matches the preceding pattern zero or more time, so [^,]* matches zero or more non‑comma characters.
+  $ matches the end of the string.
   ```
